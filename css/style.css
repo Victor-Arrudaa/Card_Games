@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #5a5a5a, #ffff);
+  font-family: "Ubuntu", sans-serif;
+  color: #5a5a5a;
+}
+
+.container {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  padding: 0 32px;
+  background: #c9fe27;
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  background: #5a5a5a;
+  border-radius: 15px 0 15px 0;
+}
+
+.main {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.box {
+  width: 16%;
+  height: 250px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.197);
+  background: #fff;
+  overflow: hidden;
+  margin: 20px;
+  margin-top: 56px;
+  cursor: pointer;
+  border-radius: 15px;
+  transform: skew(0);
+  display: inline-block;
+}
+
+.box:active {
+  background: #c9fe27;
+}
+
+.box div {
+  width: 100%;
+  text-align: center;
+  height: 220px;
+}
+
+.box div img {
+  width: 100%;
+  height: 250px;
+  transform-origin: top;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.197);
+  transition: transform 0.4s;
+}
+
+.box:hover div img {
+  transform: scale(0.8) translateY(10px);
+}
+
+.box p {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  transition: all 0.4s;
+}
+
+.box:hover p {
+  transition-delay: 0.2s;
+  transform: translate(-50%, -5px);
+}
